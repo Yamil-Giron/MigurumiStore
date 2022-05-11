@@ -15,16 +15,26 @@
 body{
     background-color: var(--color__background);
     color: var(--color__1);
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .title__content{
     display: flex;
-    padding: 10px;
-    width: auto;
+    width: 100%;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: flex-start;
     font-size: var(--textzise__tittle);
     font-family: var(--text__font1);
+}
+
+.title__content h1{
+    padding: 0.3em;
+    margin: 0.3em;
 }
 
 .menu__content{
@@ -36,6 +46,8 @@ body{
     justify-content: space-between;
     flex-flow: row nowrap;
     height: 50px;
+    width: 100%;
+    padding: 0.3em;
 }
 
 .logo__content img{
@@ -46,13 +58,14 @@ body{
     border: solid 3px;
     border-color: var(--color__1);
     justify-content: flex-start;
+    margin-left: 0.7em;
 }
 
 .navbar__content{
     display: flex;
     justify-content: center;
-    margin-right: 30px;
     align-items: center;
+    margin: 0.1em
 }
 
 ul{
@@ -90,4 +103,32 @@ a:link {
   /* selected link */
   a:active {
     color: var(--color__4);
+  }
+
+  .aside__content{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: auto;
+    justify-content: center;
+}
+
+.aside__content video{
+    margin-top: 10%;
+}
+
+.footer__content{
+    display: flex;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: var(--color__5);
+    color: var(--color__1);
+    text-align: start;
+    padding: 0.4%;
+    min-width: max-content;
+    margin-top: 50%;
   }
