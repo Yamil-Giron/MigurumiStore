@@ -1,0 +1,134 @@
+:root{
+    --color__background: #FFBC96;
+    --color__1: #1B0A00;
+    --color__2: #6B2E0C;
+    --color__3: #FFDBC7;
+    --color__4: #BF6D3E;
+    --color__5:#66391F;
+    --text__font1: 'Pacifico', cursive;
+    --text__font2: 'Tenor Sans', sans-serif;
+    --textzise__tittle: 1.3em;
+    --textzise__subtitle: 0.9em;
+    --texzise__text: 0.6em;
+}
+
+body{
+    background-color: var(--color__background);
+    color: var(--color__1);
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__content{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: var(--textzise__tittle);
+    font-family: var(--text__font1);
+}
+
+.title__content h1{
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+.menu__content{
+    background-color: var(--color__1);
+    display: flex;
+    font-size: var(--textzise__subtitle);
+    font-family: var(--text__font2);
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    height: 50px;
+    width: 100%;
+    padding: 0.3em;
+}
+
+.logo__content img{
+    width: 150px;
+    height: max-content;
+    background-color: var(--color__3);
+    border-radius: 100%;
+    border: solid 3px;
+    border-color: var(--color__1);
+    justify-content: flex-start;
+    margin-left: 0.7em;
+}
+
+.navbar__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em
+}
+
+ul{
+    width: 100%;
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar__item{
+    margin-right: 200px;
+}
+
+a{
+    font-family: var(--text__font2);
+    text-decoration: none;
+}
+
+/* LINKS COlORS*/
+
+a:link {
+    color: var(--color__3);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--color__3);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--color__2);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--color__4);
+  }
+
+  .aside__content{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: auto;
+    justify-content: center;
+}
+
+.aside__content video{
+    margin-top: 10%;
+}
+
+.footer__content{
+    display: flex;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: var(--color__5);
+    color: var(--color__1);
+    text-align: start;
+    padding: 0.4%;
+    min-width: max-content;
+    margin-top: 50%;
+  }
