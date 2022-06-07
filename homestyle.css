@@ -174,10 +174,14 @@ body{
     color: var(--color__2);
   }
 
-  .footer__content img{
-      width: 50px;
-  }
-
 .footer__content h3{
-    display: block;
+    display: flex;
+    
+}
+
+/*Selector universal*/
+
+::selection{
+    background-color: var(--color__2);
+    color: var(--color__background);
 }
